@@ -1,15 +1,25 @@
+import Link from "next/link";
 import React from "react";
 
-const footer = () => {
+const Footer = () => {
   return (
     <>
-    <div className="flex justify-center">
-      <div>Github</div>
-      <div>Art Collections</div>
-      <div>resume</div>
-    </div>
+      <div className="bg-black p-10 text-white flex justify-center gap-10">
+        <Link
+          href="https://github.com/SantinoGiordano"
+          className="hover:text-gray-400 transition"
+        >
+          Github
+        </Link>
+        <Link href="./" className="hover:text-gray-400 transition">
+          Art Collections
+        </Link>
+        <Link href="./" className="hover:text-gray-400 transition">
+          Resume
+        </Link>
+      </div>
     </>
   );
 };
 
-export default footer;
+export default Footer;
