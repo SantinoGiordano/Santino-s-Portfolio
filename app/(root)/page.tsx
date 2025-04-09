@@ -1,10 +1,8 @@
 import Footer from "@/components/footer";
-import NavBar from "../../components/NavBar";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
       <div
         className="min-h-screen bg-fixed bg-center bg-cover bg-no-repeat"
         style={{
