@@ -10,8 +10,10 @@ export default function Home() {
           backgroundImage: "url('/background.jpg')",
         }}
       >
-        <div className="flex items-center justify-center min-h-screen bg-opacity-50">
-          <h1 className="text-white text-4xl font-bold">Welcome</h1>
+        <div
+          className={`flex items-center justify-center min-h-screen bg-opacity-50 `}
+        >
+          <h1 className="text-white text-6xl">Santino Giordano</h1>
         </div>
       </div>
     </>
