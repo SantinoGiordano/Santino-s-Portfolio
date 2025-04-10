@@ -23,7 +23,11 @@ const myData: Art[] = [
   { id: 14, name: "Item 14", url: "/giordanos timberjacks 3-21-24 (1).png" },
   { id: 15, name: "Item 10", url: "/giordanos logic knots 3-26-24 (2).png" },
   { id: 16, name: "Item 16", url: "/extraLife.png" },
-  { id: 17, name: "Item 17", url: "/giordanos compass flights 3-26-24 (1).png" },
+  {
+    id: 17,
+    name: "Item 17",
+    url: "/giordanos compass flights 3-26-24 (1).png",
+  },
   { id: 18, name: "Item 18", url: "/AS.png" },
 ];
 
@@ -44,10 +48,21 @@ export default function Collection() {
               height={300}
               className="rounded-xl w-full h-auto object-cover"
             />
-            <p className="text-center mt-4 text-lg font-semibold">{item.name}</p>
+            <p className="text-center mt-4 text-lg font-semibold">
+              {item.name}
+            </p>
           </div>
         ))}
       </div>
+      {/* <div className="relative w-[75%] h-[1500px] items-center justify-center">
+        <Image
+          src="/nytBlackAndWhite.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+      </div> */}
     </div>
   );
 }
