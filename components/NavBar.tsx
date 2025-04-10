@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ContactButton from "./contact";
 
 const NavBar = () => {
   return (
@@ -13,7 +14,7 @@ const NavBar = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <ContactButton/>
           </li>
         </ul>
       </div>
