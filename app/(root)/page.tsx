@@ -1,4 +1,4 @@
-import Footer from "@/components/footer";
+
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
         >
           <h1 className="text-white text-6xl">Santino Giordano</h1>
         </div>
-        <Footer />
       </div>
     </>
   );
