@@ -14,7 +14,7 @@ const Footer = () => {
         <Link href="/collection" className="hover:text-gray-400 transition">
           Art Collections
         </Link>
-        <Link href="./" className="hover:text-gray-400 transition">
+        <Link href="./Resume.pdf" className="hover:text-gray-400 transition">
           Resume
         </Link>
       </div>
