@@ -6,7 +6,7 @@ export default function Home() {
       <div
         className="min-h-screen bg-fixed bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: "url('/background.jpg')",
+          backgroundImage: "url('/tree.avif')",
         }}
       >
         <div
