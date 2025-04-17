@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 
 interface Art {
@@ -32,14 +34,17 @@ const myData: Art[] = [
 ];
 
 export default function Collection() {
+  const [selectedArt, setSelectedArt] = useState<Art | null>(null);
+
   return (
-    <div className="bg-black text-white min-h-screen py-12 pt-30 px-6">
-      <h1 className="text-3xl font-bold mb-10 text-center">Art Collection</h1>
+    <div className="bg-black text-white min-h-screen pt-30 py-12 px-6 relative">
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {myData.map((item: Art) => (
           <div
             key={item.id}
-            className="bg-gray-900 rounded-2xl p-4 hover:scale-105 transition-transform shadow-lg"
+            className="bg-gray-900 rounded-2xl p-4 hover:scale-105 transition-transform shadow-lg cursor-pointer"
+            onClick={() => setSelectedArt(item)}
           >
             <Image
               src={item.url}
@@ -54,15 +59,40 @@ export default function Collection() {
           </div>
         ))}
       </div>
-      {/* <div className="relative w-[75%] h-[1500px] items-center justify-center">
-        <Image
-          src="/nytBlackAndWhite.png"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
-      </div> */}
+
+      {selectedArt && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+          <div className="relative max-w-[90vw] max-h-[90vh]">
+            <Image
+              src={selectedArt.url}
+              alt={selectedArt.name}
+              width={900}
+              height={900}
+              className="rounded-xl w-full h-auto object-contain"
+            />
+            <button
+              onClick={() => setSelectedArt(null)}
+              className="absolute top-2 right-2 bg-white text-black rounded-full p-2 hover:bg-red-600 hover:text-white transition"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
+}
+
+
+{
+  /* <div className="relative w-[75%] h-[1500px] items-center justify-center">
+  <Image
+    src="/nytBlackAndWhite.png"
+    alt=""
+    fill
+    className="object-cover"
+    priority
+  />
+</div> */
 }
