@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -38,7 +38,6 @@ export default function Collection() {
 
   return (
     <div className="bg-black text-white min-h-screen pt-30 py-12 px-6 relative">
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {myData.map((item: Art) => (
           <div
@@ -83,7 +82,6 @@ export default function Collection() {
     </div>
   );
 }
-
 
 {
   /* <div className="relative w-[75%] h-[1500px] items-center justify-center">
