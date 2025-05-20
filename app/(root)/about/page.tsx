@@ -17,6 +17,30 @@ export default function About() {
           a team or leading a project, I’m driven by curiosity, continuous
           learning, and a commitment to excellence.
         </p>
+
+        <h2 className="text-2xl font-semibold text-gray-800 mt-8 mb-4">Projects</h2>
+        <ul className="space-y-2">
+          <li>
+            <a
+              href="https://www.atp-exphys.com/"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ATP Exphys Website
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://furniture-store-frontend-one.vercel.app/"
+              className="text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Furniture Store Website
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );
