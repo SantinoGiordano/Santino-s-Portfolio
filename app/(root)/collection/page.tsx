@@ -1,12 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { Art } from "@/app/types";
 
-interface Art {
-  id: number;
-  name: string;
-  url: string;
-}
+
 
 const myData: Art[] = [
   { id: 1, name: "Bibliophobia ", url: "/bookFear.png" },
