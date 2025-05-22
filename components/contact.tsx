@@ -11,9 +11,9 @@ const ContactButton = () => {
 
   return (
     <div className="relative inline-block">
-       <button
+       <button       
         onClick={() => togglePopup()}
-        className="flex gap-8 text-white text-lg hover:cursor-pointer
+        className="hover:text-gray-400 transition flex gap-8 text-white text-lg hover:cursor-pointer
 "
       >
         Contact
