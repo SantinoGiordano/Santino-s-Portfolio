@@ -36,7 +36,8 @@ export default function About() {
           </li>
           <li>
             <a
-              href="https://furniture-store-frontend-one.vercel.app/"
+              href="https://github.com/SantinoGiordano/FurnitureStoreFrontend"
+              // href="https://furniture-store-frontend-one.vercel.app/"
               className="text-blue-600 hover:underline break-words"
               target="_blank"
               rel="noopener noreferrer"
