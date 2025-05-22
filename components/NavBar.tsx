@@ -8,13 +8,39 @@ const NavBar = () => {
       <div className="max-w-7xl h-full mx-auto px-4 flex justify-center items-center">
         <ul className="flex gap-8 text-white text-lg">
           <li>
-            <Link href="/">Home</Link>
+            <Link className="hover:text-gray-400 transition" href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link className="hover:text-gray-400 transition" href="/about">
+              About
+            </Link>
           </li>
           <li>
-            <ContactButton/>
+            <Link
+              href="https://github.com/SantinoGiordano"
+              className="hover:text-gray-400 transition"
+            >
+              GitHub
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="./Resume.pdf"
+              className="hover:text-gray-400 transition"
+            >
+              Resume
+            </Link>
+            <Link
+              href="/collection"
+              className="hover:text-gray-400 transition"
+            >
+              Resume
+            </Link>
+          </li>
+          <li>
+            <ContactButton />
           </li>
         </ul>
       </div>
