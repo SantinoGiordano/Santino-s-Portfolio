@@ -4,12 +4,16 @@ const Data = [
     link: "/https://www.atp-exphys.com",
   },
   {
-    name: "Artwork 2",
+    name: "Furniture Store Repository",
     url: "/https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
   {
-    name: "Artwork 3",
-    url: "/https://elitetreeandsnowllc.com/",
+    name: "Meditation App",
+    url: "/https://github.com/SantinoGiordano/StripeApp",
+  },  
+  {
+    name: "Tree Service App",
+    url: "/https://www.elitetreeandsnowllc.com/",
   },
 ];
 
