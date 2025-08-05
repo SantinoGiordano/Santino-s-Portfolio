@@ -28,8 +28,8 @@ export default function About() {
             <a
               href="https://www.atp-exphys.com/"
               className="text-blue-600 hover:underline break-words"
-              target="_blank"
-              rel="noopener noreferrer"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               ATP Exphys Website
             </a>
@@ -39,8 +39,8 @@ export default function About() {
               href="https://github.com/SantinoGiordano/FurnitureStoreFrontend"
               // href="https://furniture-store-frontend-one.vercel.app/"
               className="text-blue-600 hover:underline break-words"
-              target="_blank"
-              rel="noopener noreferrer"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               Furniture Store Website
             </a>
