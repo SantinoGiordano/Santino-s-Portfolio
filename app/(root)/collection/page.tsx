@@ -59,6 +59,7 @@ export default function Collection() {
             onClick={() => setSelectedArt(item)}
           >
             <Image
+              draggable={false}
               src={item.url}
               alt={item.name}
               width={300}
@@ -76,6 +77,7 @@ export default function Collection() {
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
           <div className="relative max-w-[90vw] max-h-[90vh]">
             <Image
+              draggable={false}
               src={selectedArt.url}
               alt={selectedArt.name}
               width={900}
