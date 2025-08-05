@@ -1,3 +1,5 @@
+import Data from "@/data/page";
+
 export default function About() {
   return (
     <div className="bg-gradient-to-br from-black via-gray-900 to-black min-h-screen flex items-center justify-center px-4 pt-20">
@@ -23,29 +25,21 @@ export default function About() {
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mt-8 mb-4">
           Projects
         </h2>
-        <ul className="space-y-2">
-          <li>
-            <a
-              href="https://www.atp-exphys.com/"
-              className="text-blue-600 hover:underline break-words"
-              // target="_blank"
-              // rel="noopener noreferrer"
-            >
-              ATP Exphys Website
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/SantinoGiordano/FurnitureStoreFrontend"
-              // href="https://furniture-store-frontend-one.vercel.app/"
-              className="text-blue-600 hover:underline break-words"
-              // target="_blank"
-              // rel="noopener noreferrer"
-            >
-              Furniture Store Website
-            </a>
-          </li>
-        </ul>
+        {Data.map((item) => (
+          <div key={item.id} className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-800">{item.name}</h3>
+            <p className="text-gray-600">
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                View Project
+              </a>
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
