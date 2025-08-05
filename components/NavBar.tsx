@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import React, { useState } from "react";
@@ -15,12 +15,37 @@ const NavBar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-white text-lg">
-          <li><Link className="hover:text-gray-400 transition" href="/">Home</Link></li>
-          <li><Link className="hover:text-gray-400 transition" href="/about">About</Link></li>
-          <li><Link className="hover:text-gray-400 transition" href="/collection">Collection</Link></li>
-          <li><Link className="hover:text-gray-400 transition" href="https://github.com/SantinoGiordano">GitHub</Link></li>
-          <li><Link className="hover:text-gray-400 transition" href="/Resume.pdf">Resume</Link></li>
-          <li><ContactButton /></li>
+          <li>
+            <Link className="hover:text-gray-400 transition" href="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-gray-400 transition" href="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-gray-400 transition" href="/collection">
+              Collection
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-gray-400 transition"
+              href="https://github.com/SantinoGiordano"
+            >
+              GitHub
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:text-gray-400 transition" href="/Resume.pdf">
+              Resume
+            </Link>
+          </li>
+          <li>
+            <ContactButton />
+          </li>
         </ul>
 
         <button
@@ -33,11 +58,41 @@ const NavBar = () => {
 
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-black bg-opacity-80 text-white flex flex-col items-center gap-6 py-6 z-40">
-          <Link onClick={() => setIsOpen(false)} className="hover:text-gray-400" href="/">Home</Link>
-          <Link onClick={() => setIsOpen(false)} className="hover:text-gray-400" href="/about">About</Link>
-          <Link onClick={() => setIsOpen(false)} className="hover:text-gray-400" href="/collection">Collection</Link>
-          <Link onClick={() => setIsOpen(false)} className="hover:text-gray-400" href="https://github.com/SantinoGiordano">GitHub</Link>
-          <Link onClick={() => setIsOpen(false)} className="hover:text-gray-400" href="/Resume.pdf">Resume</Link>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="hover:text-gray-400"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="hover:text-gray-400"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="hover:text-gray-400"
+            href="/collection"
+          >
+            Collection
+          </Link>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="hover:text-gray-400"
+            href="https://github.com/SantinoGiordano"
+          >
+            GitHub
+          </Link>
+          <Link
+            onClick={() => setIsOpen(false)}
+            className="hover:text-gray-400"
+            href="/Resume.pdf"
+          >
+            Resume
+          </Link>
           <ContactButton />
         </div>
       )}
