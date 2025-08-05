@@ -11,17 +11,22 @@ const Data: Project[]= [
   {
     id: 2,
     name: "Furniture Store Repository",
-    link: "/https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
   {
     id: 3,
     name: "Meditation App",
-    link: "/https://github.com/SantinoGiordano/StripeApp",
+    link: "https://vercel.com/santino-giordanos-projects/shopify-app",
   },  
   {
     id: 4,
     name: "Tree Service App",
-    link: "/https://www.elitetreeandsnowllc.com/",
+    link: "https://www.elitetreeandsnowllc.com/",
+  },
+    {
+    id: 5,
+    name: "Main Grille Website",
+    link: "https://141maingrill.vercel.app/",
   },
 ];
 
