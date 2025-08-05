@@ -6,7 +6,7 @@ const Data: Project[]= [
   {
     id: 1,
     name: "ATP Exphys Website",
-    link: "/https://www.atp-exphys.com",
+    link: "https://www.atp-exphys.com/",
   },
   {
     id: 2,
