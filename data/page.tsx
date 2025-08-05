@@ -1,19 +1,27 @@
-const Data = [
+import { Project } from "@/app/types";
+
+
+
+const Data: Project[]= [
   {
+    id: 1,
     name: "ATP Exphys Website",
     link: "/https://www.atp-exphys.com",
   },
   {
+    id: 2,
     name: "Furniture Store Repository",
-    url: "/https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+    link: "/https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
   {
+    id: 3,
     name: "Meditation App",
-    url: "/https://github.com/SantinoGiordano/StripeApp",
+    link: "/https://github.com/SantinoGiordano/StripeApp",
   },  
   {
+    id: 4,
     name: "Tree Service App",
-    url: "/https://www.elitetreeandsnowllc.com/",
+    link: "/https://www.elitetreeandsnowllc.com/",
   },
 ];
 
