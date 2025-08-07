@@ -3,8 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { Art } from "@/app/types";
 
-
-
 const myData: Art[] = [
   { id: 1, name: "Bibliophobia ", url: "/bookFear.png" },
   { id: 2, name: "Chronomentrophobia", url: "/clockFearSmaller.PNG" },
@@ -50,7 +48,16 @@ export default function Collection() {
   const [selectedArt, setSelectedArt] = useState<Art | null>(null);
 
   return (
-    <div className="bg-black text-white min-h-screen pt-30 py-12 px-6 relative">
+    <div className="bg-black text-center text-white min-h-screen pt-30 py-12 px-6 relative">
+      <a  
+        href="/files/nyc-recreation-prod.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block text-center mb-12 min-w-1/3 bg-gray-900 py-4 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition"
+      >
+        <h1 className="text-xl font-semibold">New York Tomes Recreation </h1>
+      </a>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {myData.map((item: Art) => (
           <div
