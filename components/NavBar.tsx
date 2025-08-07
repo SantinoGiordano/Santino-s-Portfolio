@@ -31,6 +31,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link
+              target="_blank"
               className="hover:text-gray-400 transition"
               href="https://github.com/SantinoGiordano"
             >
@@ -38,7 +39,11 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="hover:text-gray-400 transition" href="/Resume.pdf">
+            <Link
+              target="_blank"
+              className="hover:text-gray-400 transition"
+              href="/Resume.pdf"
+            >
               Resume
             </Link>
           </li>
