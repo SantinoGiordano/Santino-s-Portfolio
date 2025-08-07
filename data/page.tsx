@@ -14,7 +14,7 @@ const Data: Project[] = [
   {
     id: 3,
     name: "Meditation App",
-    link: "https://vercel.com/santino-giordanos-projects/shopify-app",
+    link: "https://shopify-app-murex.vercel.app/",
   },
   {
     id: 4,
