@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import ContactButton from "./contact";
+// import ContactButton from "./contact";
 import { Menu, X } from "lucide-react";
 
 const NavBar = () => {
@@ -44,7 +44,10 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <ContactButton />
+            {/* <ContactButton /> */}
+            <Link className="hover:text-gray-400 transition" href="/contact">
+              Contact
+            </Link>
           </li>
         </ul>
 
@@ -93,7 +96,9 @@ const NavBar = () => {
           >
             Resume
           </Link>
-          <ContactButton />
+          <Link className="hover:text-gray-400 transition" href="/contact">
+            Contact
+          </Link>
         </div>
       )}
     </nav>
