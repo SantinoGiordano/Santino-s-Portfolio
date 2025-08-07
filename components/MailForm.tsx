@@ -33,10 +33,11 @@ export default function ContactForm({
       console.error(result.error);
     }
   };
+
   return (
     <>
       <div className="p-8 text-center animate-fade-in w-full">
-        <h1 className="font-bold text-4xl mb-4">Contact Us</h1>
+        <h1 className="font-bold text-white text-4xl mb-4">Contact Us</h1>
         <p className="text-lg mb-6 text-gray-300">
           We&apos;d love to hear from you!
         </p>
@@ -47,33 +48,36 @@ export default function ContactForm({
           <input
             type="text"
             placeholder="Your Name"
-            className="w-full p-3 mb-4 bg-gray-700 rounded shadow-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full p-3 mb-4 bg-white text-black rounded shadow-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
             {...register("name")}
           />
           {errors.name && (
             <span className="text-red-500">{errors.name.message}</span>
           )}
+
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full p-3 mb-4 bg-gray-700 rounded shadow-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full p-3 mb-4 bg-white text-black rounded shadow-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
             {...register("email")}
           />
           {errors.email && (
             <span className="text-red-500">{errors.email.message}</span>
           )}
+
           <input
-            type="subject"
+            type="text"
             placeholder="Your Subject"
-            className="w-full p-3 mb-4 bg-gray-700 rounded shadow-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full p-3 mb-4 bg-white text-black rounded shadow-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
             {...register("subject")}
           />
           {errors.subject && (
             <span className="text-red-500">{errors.subject.message}</span>
           )}
+
           <textarea
             placeholder="Your Message"
-            className="w-full p-3 mb-4 bg-gray-700 rounded shadow-md placeholder-gray-400 h-32 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full p-3 mb-4 bg-white text-black rounded shadow-md placeholder-gray-500 h-32 focus:outline-none focus:ring-2 focus:ring-green-500"
             {...register("message")}
           ></textarea>
           {errors.message && (
@@ -102,6 +106,7 @@ export default function ContactForm({
             </svg>
           </button>
         </form>
+
         {isSuccess && (
           <div className="toast toast-end">
             <div className="alert alert-success">
@@ -111,7 +116,6 @@ export default function ContactForm({
         )}
       </div>
 
-      {/* Custom Animation */}
       <style jsx>{`
         @keyframes fade-in {
           0% {
