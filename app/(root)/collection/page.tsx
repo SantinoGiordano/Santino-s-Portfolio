@@ -49,11 +49,11 @@ export default function Collection() {
 
   return (
     <div className="bg-black text-center text-white min-h-screen pt-30 py-12 px-6 relative">
-      <a  
-        href="/files/nyc-recreation-prod.pdf"
+      <a
+        href="/nytBlackAndWhite.png"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block text-center mb-12 min-w-1/3 bg-gray-900 py-4 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition"
+        className="inline-block text-center mb-12 min-w-1/3 bg-gray-900 py-4 px-6 rounded-lg shadow-lg hover:bg-gray-800 transition"
       >
         <h1 className="text-xl font-semibold">New York Tomes Recreation </h1>
       </a>
