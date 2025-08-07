@@ -13,7 +13,6 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto px-4 h-full flex justify-between items-center">
         <div className="text-white font-semibold text-xl">Portfolio</div>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-white text-lg">
           <li>
             <Link className="hover:text-gray-400 transition" href="/">
@@ -44,7 +43,6 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            {/* <ContactButton /> */}
             <Link className="hover:text-gray-400 transition" href="/contact">
               Contact
             </Link>
