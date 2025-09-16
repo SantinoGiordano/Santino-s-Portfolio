@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 const ContactButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +11,14 @@ const ContactButton = () => {
 
   return (
     <div className="relative inline-block">
-       <button       
+      <button
         onClick={() => togglePopup()}
         className="hover:text-gray-400 transition flex gap-8 text-white text-lg hover:cursor-pointer
 "
       >
         Contact
       </button>
-      
+
       {isOpen && (
         <div className="absolute top-full right-0 mt-2 w-80 bg-white border border-gray-200 rounded-md shadow-lg z-10 p-4">
           <div className="space-y-3">
@@ -82,7 +82,9 @@ const ContactButton = () => {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              <span className="text-gray-700">Email: Santinogiordnao13@gmail.com</span>
+              <span className="text-gray-700">
+                Email: Santinogiordnao13@gmail.com
+              </span>
             </div>
           </div>
         </div>
