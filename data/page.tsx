@@ -8,8 +8,8 @@ const Data: Project[] = [
   },
   {
     id: 2,
-    name: "Furniture Store Repository",
-    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+    name: "Stat Tracker App",
+    link: "https://popevolleyballstats.vercel.app/",
   },
   {
     id: 3,
@@ -25,6 +25,11 @@ const Data: Project[] = [
     id: 5,
     name: "Main Grille Website",
     link: "https://141maingrill.vercel.app/",
+  },
+   {
+    id: 6,
+     name: "Furniture Store Repository",
+    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
 ];
 
