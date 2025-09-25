@@ -29,7 +29,7 @@ const Data: Project[] = [
    {
     id: 6,
      name: "Furniture Store Repository",
-    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+    link: "https://furniture-store-frontend-one.vercel.app/",
   },
 ];
 
