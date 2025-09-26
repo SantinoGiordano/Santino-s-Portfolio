@@ -22,7 +22,7 @@ export default function DisclaimerBanner() {
         </div>
       )}
 
-      <div className="w-full max-w-5xl p-6 sm:p-10 bg-white/95 backdrop-blur-lg shadow-2xl rounded-3xl border border-gray-200">
+      <div className="mt-10 w-full max-w-5xl p-6 sm:p-10 bg-white/95 backdrop-blur-lg shadow-2xl rounded-3xl border border-gray-200">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 text-center">
           Projects
         </h2>
