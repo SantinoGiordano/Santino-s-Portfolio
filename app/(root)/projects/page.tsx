@@ -9,7 +9,7 @@ export default function DisclaimerBanner() {
     <div className=" p-10 bg-gradient-to-br from-black via-gray-900 to-black min-h-screen flex flex-col items-center justify-start pt-20 px-4">
       {/* Disclaimer Banner */}
       {visible && (
-        <div className="mt-10 w-full max-w-4xl mb-8 bg-yellow-100 text-yellow-800 text-sm p-4 flex justify-between items-center rounded-lg shadow-md">
+        <div className="z-100 mt-10 w-full max-w-4xl bg-yellow-100 text-yellow-800 text-sm p-4 flex justify-between items-center rounded-lg shadow-md">
           <span>
             Disclaimer: Some sites use free backend hosting on render and take 50 seconds for an inital request.
           </span>
