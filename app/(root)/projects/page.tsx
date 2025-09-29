@@ -15,7 +15,7 @@ export default function DisclaimerBanner() {
           </span>
           <button
             onClick={() => setVisible(false)}
-            className="ml-4 text-yellow-700 hover:underline font-medium"
+            className="ml-4 text-yellow-700 hover:underline font-medium hover:cursor-pointer"
           >
             Dismiss
           </button>
