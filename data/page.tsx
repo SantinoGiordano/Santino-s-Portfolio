@@ -33,8 +33,8 @@ const Data: Project[] = [
   },
      {
     id: 6,
-     name: "Furniture Store",
-    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+     name: "Wprd Guessing App",
+    link: "https://woordle-frontend.vercel.app/",
   },
 ];
 
