@@ -33,7 +33,7 @@ const Data: Project[] = [
   },
      {
     id: 7,
-     name: "Wprd Guessing App",
+     name: "Word Guessing App",
     link: "https://woordle-frontend.vercel.app/",
   },
 ];
