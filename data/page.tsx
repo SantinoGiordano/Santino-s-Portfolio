@@ -13,12 +13,12 @@ const Data: Project[] = [
   },
   {
     id: 3,
-    name: "Meditation App",
+    name: "Meditation Website",
     link: "https://shopify-app-murex.vercel.app/",
   },
   {
     id: 4,
-    name: "Tree Service App",
+    name: "Tree Service Website",
     link: "https://www.elitetreeandsnowllc.com/",
   },
   {
@@ -28,8 +28,13 @@ const Data: Project[] = [
   },
    {
     id: 6,
-     name: "Furniture Store Repository",
-    link: "https://furniture-store-frontend-one.vercel.app/",
+     name: "Furniture Store",
+    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
+  },
+     {
+    id: 6,
+     name: "Furniture Store",
+    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
 ];
 
