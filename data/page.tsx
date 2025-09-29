@@ -32,7 +32,7 @@ const Data: Project[] = [
     link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
      {
-    id: 6,
+    id: 7,
      name: "Wprd Guessing App",
     link: "https://woordle-frontend.vercel.app/",
   },
