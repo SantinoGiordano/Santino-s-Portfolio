@@ -7,9 +7,10 @@ export default function Home() {
            <h1 className="text-white text-7xl font-bold mb-4">Santino Giordano</h1>
         <span className="text-rotate text-5xl">
           <span className="justify-items-center text-white ">
-            <span>SOFTWARE DEVELOPER</span>
+            <span>DEVELOPER</span>
             <span>DESIGNER</span>
             <span>CREATOR</span>
+            <span>LEARNER</span>
           </span>
         </span>
       </div>
