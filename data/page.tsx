@@ -8,7 +8,7 @@ const Data: Project[] = [
   },
   {
     id: 2,
-    name: "Stat Tracker App",
+    name: "W-Mass HS Volleyball Stats Calculator",
     link: "https://popevolleyballstats.vercel.app/",
   },
   {
@@ -26,16 +26,23 @@ const Data: Project[] = [
     name: "Main Grille Website",
     link: "https://141maingrill.vercel.app/",
   },
-   {
-    id: 6,
-     name: "Furniture Store",
-    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
-  },
-     {
+  // {
+  //   id: 6,
+  //   name: "W-Mass HS Volleyball Stats Calculator",
+  //   link: "https://popevolleyballstats.vercel.app/",
+  // },
+  {
     id: 7,
-     name: "Word Guessing App",
+    name: "Word Guessing App",
     link: "https://woordle-frontend.vercel.app/",
+  },
+  {
+    id: 8,
+    name: "Furniture Store",
+    link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
 ];
 
 export default Data;
+
+
