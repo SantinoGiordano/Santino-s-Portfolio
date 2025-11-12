@@ -9,8 +9,8 @@ export default function Home() {
           <span className="justify-items-center text-white ">
             <span>DEVELOPER</span>
             <span>DESIGNER</span>
-            <span>CREATOR</span>
-            <span>INNOVATOR</span>
+            {/* <span>CREATOR</span>
+            <span>INNOVATOR</span> */}
             <span>LEARNER</span>
           </span>
         </span>
