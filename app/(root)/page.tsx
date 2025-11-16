@@ -5,12 +5,11 @@ export default function Home() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Trigger animation after hydration
     const timeout = setTimeout(() => setReady(true), 10);
     return () => clearTimeout(timeout);
   }, []);
 
-  if (!ready) return null; // avoid SSR mismatch
+  if (!ready) return null;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4">
