@@ -29,7 +29,7 @@ const Data: Project[] = [
   {
     id: 6,
     name: "Courts frontend App",
-    link: "https://github.com/SantinoGiordano/CourtsFrontend",
+    link: "https://courts-frontend.vercel.app/",
   },
   {
     id: 7,
