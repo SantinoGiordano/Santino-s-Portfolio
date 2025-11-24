@@ -26,11 +26,11 @@ const Data: Project[] = [
     name: "Main Grille Website",
     link: "https://141maingrill.vercel.app/",
   },
-  // {
-  //   id: 6,
-  //   name: "W-Mass HS Volleyball Stats Calculator",
-  //   link: "https://popevolleyballstats.vercel.app/",
-  // },
+  {
+    id: 6,
+    name: "Courts frontend App",
+    link: "https://github.com/SantinoGiordano/CourtsFrontend",
+  },
   {
     id: 7,
     name: "Word Guessing App",
