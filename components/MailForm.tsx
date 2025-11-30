@@ -39,7 +39,7 @@ export default function ContactForm({
       <div className="p-8 text-center animate-fade-in w-full">
         <h1 className="font-bold text-white text-4xl mb-4">Contact Us</h1>
         <p className="text-lg mb-6 text-gray-300">
-          We&apos;d love to hear from you!
+          I&apos;d love to hear from you!
         </p>
         <form
           onSubmit={handleSubmit(onSubmit)}
