@@ -107,7 +107,7 @@ const NavBar = () => {
           <Link
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400"
-            href="/Resume.pdf"
+            href="/Resume(1).pdf"
           >
             Resume
           </Link>
