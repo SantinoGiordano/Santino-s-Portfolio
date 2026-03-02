@@ -13,8 +13,8 @@ const Data: Project[] = [
   },
   {
     id: 3,
-    name: "Meditation Website",
-    link: "https://shopify-app-murex.vercel.app/",
+    name: "Movie Theater Website",
+    link: "https://theater-app-frontend-968c45540-santino-giordanos-projects.vercel.app/",
   },
   {
     id: 4,
@@ -28,19 +28,25 @@ const Data: Project[] = [
   },
   {
     id: 6,
+    name: "Meditation Website",
+    link: "https://shopify-app-murex.vercel.app/",
+  },
+  {
+    id: 7,
     name: "Courts frontend App",
     link: "https://courts-frontend.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Word Guessing App",
     link: "https://woordle-frontend.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Furniture Store",
     link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
+  
 ];
 
 export default Data;
