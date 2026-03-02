@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className="text-white text-7xl font-bold mb-4">Santino Giordano</h1>
         <span className="text-rotate text-7xl">
           <span className="justify-items-center text-white ">
-            <span></span>
+            <span> </span>
             <span>DEVELOP</span>
             <span>LEARN</span>
             <span>DESIGN</span>
