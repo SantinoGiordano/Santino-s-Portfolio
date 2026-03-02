@@ -1,30 +1,41 @@
-'use client';
-import { useEffect, useState } from 'react';
+"use client";
+
+import { useEffect, useState } from "react";
+
+const words = [
+  "DEVELOPER",
+  "DESIGNER",
+  "LEARNER",
+  "PROBLEM SOLVER",
+  "CREATOR"
+];
 
 export default function Home() {
-  const [ready, setReady] = useState(false);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setReady(true), 10);
-    return () => clearTimeout(timeout);
-  }, []);
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2000);
 
-  if (!ready) return null;
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4">
       <div className="text-center">
-        <h1 className="text-white text-7xl font-bold mb-4">Santino Giordano</h1>
-        <span className="text-rotate text-7xl">
-          <span className="justify-items-center text-white ">
-            <span> </span>
-            <span>DEVELOP</span>
-            <span>LEARN</span>
-            <span>DESIGN</span>
-            <span>DEPLOY</span>
-            <span>MAINTAIN</span>
+        <h1 className="text-white text-7xl font-bold mb-4">
+          Santino Giordano
+        </h1>
+
+        <div className="relative h-[90px] flex items-center justify-center">
+          <span
+            key={words[index]}
+            className="text-4xl text-white transition-opacity duration-500 animate-fade"
+          >
+            {words[index]}
           </span>
-        </span>
+        </div>
       </div>
     </div>
   );
