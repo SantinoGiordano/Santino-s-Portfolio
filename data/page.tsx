@@ -14,7 +14,7 @@ const Data: Project[] = [
   {
     id: 3,
     name: "Movie Theater Website",
-    link: "https://theater-app-frontend-968c45540-santino-giordanos-projects.vercel.app/",
+    link: "https://theater-app-frontend-puce.vercel.app/",
   },
   {
     id: 4,
