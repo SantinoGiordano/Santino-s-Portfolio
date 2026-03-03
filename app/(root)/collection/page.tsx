@@ -3,16 +3,21 @@ import { useState } from "react";
 import Image from "next/image";
 import { Art } from "@/app/types";
 
-const myData: Art[] = [
-  { id: 1, name: "Bibliophobia ", url: "/bookFear.png" },
+/* ================= DATA ================= */
+
+const phobias_art: Art[] = [
+  { id: 1, name: "Bibliophobia", url: "/bookFear.png" },
   { id: 2, name: "Chronomentrophobia", url: "/clockFearSmaller.PNG" },
   { id: 3, name: "Automatonophobia", url: "/puppetFear.png" },
   { id: 4, name: "Technology", url: "/teckFear.png" },
   { id: 5, name: "Dysmorphia", url: "/hands fear.png" },
   { id: 6, name: "Masklophobia", url: "/maskFear.png" },
   { id: 7, name: "Trypanophobia", url: "/needleFear.png" },
-  { id: 8, name: "Scopophobia ", url: "/watchingFearSmaller.PNG" },
-  { id: 9, name: "thanatophobia", url: "/death fear.png" },
+  { id: 8, name: "Scopophobia", url: "/watchingFearSmaller.PNG" },
+  { id: 9, name: "Thanatophobia", url: "/death fear.png" },
+];
+
+const companies_art: Art[] = [
   { id: 10, name: "Vanguard Pests", url: "/giordnaos vanguard 3-26-24.png" },
   { id: 11, name: "Paragon Packaging", url: "/paragon Packageing (1).png" },
   {
@@ -47,39 +52,102 @@ const myData: Art[] = [
 export default function Collection() {
   const [selectedArt, setSelectedArt] = useState<Art | null>(null);
 
+  const renderGrid = (data: Art[]) => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      {data.map((item) => (
+        <div
+          key={item.id}
+          className="bg-gray-900 rounded-2xl p-4 hover:scale-105 transition-transform shadow-lg cursor-pointer"
+          onClick={() => setSelectedArt(item)}
+        >
+          <Image
+            draggable={false}
+            src={item.url}
+            alt={item.name}
+            width={300}
+            height={300}
+            className="rounded-xl w-full h-auto object-cover"
+          />
+          <p className="text-center mt-4 text-lg font-semibold">{item.name}</p>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
-    <div className="bg-black text-center text-white min-h-screen pt-30 py-12 px-6 relative">
-      <a
-        href="/nytBlackAndWhite.png"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block text-center mb-12 min-w-1/3 bg-gray-900 py-4 px-6 rounded-lg shadow-lg hover:bg-gray-800 transition"
-      >
-        <h1 className="text-xl font-semibold">New York Tomes Recreation </h1>
-      </a>
+    <div className="bg-black text-white min-h-screen pt-30 py-12 px-6">
+      {/* ================= NEW YORK TIMES SECTION ================= */}
+      <section className="mb-20">
+        <h2 className="text-3xl font-bold mb-4 text-center">
+          New York Times Piece
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {myData.map((item: Art) => (
-          <div
-            key={item.id}
-            className="bg-gray-900 rounded-2xl p-4 hover:scale-105 transition-transform shadow-lg cursor-pointer"
-            onClick={() => setSelectedArt(item)}
+        <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
+          <p className="text-gray-300 text-center">
+            This project is a meticulous recreation of a New York Times
+            newspaper page, designed entirely in Adobe InDesign. Every margin,
+            font, letterform, column width, and line spacing was carefully
+            replicated to match the original publication with complete accuracy.
+            The layout was reconstructed through precise measurement using a
+            physical ruler, combined with detailed research of typographic
+            standards and formatting from the official New York Times website.
+            The goal of this piece was to demonstrate technical precision,
+            typographic discipline, and a deep understanding of editorial layout
+            systems. Every element was intentionally placed to mirror the
+            authentic newspaper structure, resulting in a recreation that is
+            visually indistinguishable from the original print.
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <a
+            href="/nytBlackAndWhite.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-900 py-4 px-6 rounded-lg shadow-lg hover:bg-gray-800 transition"
           >
-            <Image
-              draggable={false}
-              src={item.url}
-              alt={item.name}
-              width={300}
-              height={300}
-              className="rounded-xl w-full h-auto object-cover"
-            />
-            <p className="text-center mt-4 text-lg font-semibold">
-              {item.name}
-            </p>
-          </div>
-        ))}
-      </div>
+            View Piece
+          </a>
+        </div>
+      </section>
 
+      {/* ================= COMPANY DESIGN SECTION ================= */}
+      <section className="mb-20">
+        <h2 className="text-3xl font-bold mb-4 text-center">Company Design</h2>
+
+        <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
+          <p className="text-gray-300 text-center">
+            This branding collection was developed entirely in Adobe Illustrator
+            as a conceptual exploration of identity design for fictional
+            companies. Each piece represents a fully imagined brand, complete
+            with logo systems, typography choices, and curated color palettes.
+            While some of the concepts incorporate subtle humor, the primary
+            goal of this project was to present each brand as if it were being
+            pitched to a real client. Every design decision was intentional and
+            strategic — from the development of cohesive color palettes that
+            would translate seamlessly across digital platforms, to the careful
+            selection of typefaces that maintain clarity, hierarchy, and brand
+            consistency.
+          </p>
+        </div>
+
+        {renderGrid(companies_art)}
+      </section>
+
+      {/* ================= FEARS DESIGN SECTION ================= */}
+      <section>
+        <h2 className="text-3xl font-bold mb-4 text-center">Fears Design</h2>
+
+        <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
+          <p className="text-gray-300 text-center">
+            {/* Add description here */}
+          </p>
+        </div>
+
+        {renderGrid(phobias_art)}
+      </section>
+
+      {/* ================= IMAGE MODAL ================= */}
       {selectedArt && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
           <div className="relative max-w-[90vw] max-h-[90vh]">
@@ -103,16 +171,4 @@ export default function Collection() {
       )}
     </div>
   );
-}
-
-{
-  /* <div className="relative w-[75%] h-[1500px] items-center justify-center">
-  <Image
-    src="/nytBlackAndWhite.png"
-    alt=""
-    fill
-    className="object-cover"
-    priority
-  />
-</div> */
 }
