@@ -79,7 +79,7 @@ export default function Collection() {
         <h2 className="text-3xl font-bold mb-4 text-center">
           New York Times Piece
         </h2>
-
+        <hr className="max-w-3xl mx-auto border-t border-white/30 mb-8" />
         <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
           <p className="text-gray-300 text-center">
             This project is a meticulous recreation of a New York Times
@@ -112,7 +112,7 @@ export default function Collection() {
       {/* ================= COMPANY DESIGN SECTION ================= */}
       <section className="mb-20">
         <h2 className="text-3xl font-bold mb-4 text-center">Company Design</h2>
-
+        <hr className="max-w-3xl mx-auto border-t border-white/30 mb-8" />
         <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
           <p className="text-gray-300 text-center">
             This branding collection was developed entirely in Adobe Illustrator
@@ -135,7 +135,7 @@ export default function Collection() {
       {/* ================= FEARS DESIGN SECTION ================= */}
       <section>
         <h2 className="text-3xl font-bold mb-4 text-center">Fears Design</h2>
-
+        <hr className="max-w-3xl mx-auto border-t border-white/30 mb-8" />
         <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
           <p className="text-gray-300 text-center">
             The Phobia Design project was created entirely in Adobe Photoshop as
