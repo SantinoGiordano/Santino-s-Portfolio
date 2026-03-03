@@ -7,7 +7,7 @@ const phobias_art: Art[] = [
   { id: 1, name: "Bibliophobia", url: "/bookFear.png" },
   { id: 2, name: "Chronomentrophobia", url: "/clockFearSmaller.PNG" },
   { id: 3, name: "Automatonophobia", url: "/puppetFear.png" },
-  { id: 4, name: "Technology", url: "/teckFear.png" },
+  { id: 4, name: "Technophobia", url: "/teckFear.png" },
   { id: 5, name: "Dysmorphia", url: "/hands fear.png" },
   { id: 6, name: "Masklophobia", url: "/maskFear.png" },
   { id: 7, name: "Trypanophobia", url: "/needleFear.png" },
