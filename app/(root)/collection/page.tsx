@@ -3,8 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { Art } from "@/app/types";
 
-/* ================= DATA ================= */
-
 const phobias_art: Art[] = [
   { id: 1, name: "Bibliophobia", url: "/bookFear.png" },
   { id: 2, name: "Chronomentrophobia", url: "/clockFearSmaller.PNG" },
@@ -140,14 +138,24 @@ export default function Collection() {
 
         <div className="max-w-3xl mx-auto mb-10 bg-gray-900 p-6 rounded-xl shadow-lg">
           <p className="text-gray-300 text-center">
-            {/* Add description here */}
+            The Phobia Design project was created entirely in Adobe Photoshop as
+            both a creative exploration and a technical growth experience.
+            Centered around the theme of fear, each piece contributes to a
+            cohesive visual narrative that is further expanded upon in my artist
+            statement. The works collectively tell a unified story through
+            symbolism, atmosphere, and emotional tension. This project played a
+            significant role in strengthening my technical abilities in
+            Photoshop. It deepened my understanding of lighting, shadow,
+            perspective, and compositional balance. More importantly, it
+            challenged me to use those technical tools intentionally — not just
+            to create visually compelling images, but to evoke emotion and
+            psychological response.
           </p>
         </div>
 
         {renderGrid(phobias_art)}
       </section>
 
-      {/* ================= IMAGE MODAL ================= */}
       {selectedArt && (
         <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
           <div className="relative max-w-[90vw] max-h-[90vh]">
