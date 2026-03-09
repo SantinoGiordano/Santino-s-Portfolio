@@ -16,8 +16,16 @@ const phobias_art: Art[] = [
 ];
 
 const companies_art: Art[] = [
-  { id: 10, name: "Vanguard Pests", url: "/giordnaos vanguard 3-26-24.png" },
-  { id: 11, name: "Paragon Packaging", url: "/paragon Packageing (1).png" },
+  { 
+    id: 10,
+     name: "Vanguard Pests", url:
+      "/giordnaos vanguard 3-26-24.png"
+     },
+  { 
+    id: 11, 
+    name: "Paragon Packaging", 
+    url: "/paragon Packageing (1).png"
+   },
   {
     id: 12,
     name: "Needle Antiques",
