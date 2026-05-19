@@ -47,7 +47,7 @@ const NavBar = () => {
             <Link
               target="_blank"
               className="hover:text-gray-400 transition"
-              href="/Santino_Giordano_Resume.pdf"
+              href="/Resume for Santino Giordano .pdf"
             >
               Resume
             </Link>
