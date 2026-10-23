@@ -17,38 +17,40 @@ const Data: Project[] = [
     link: "https://theater-app-frontend-puce.vercel.app/",
   },
   {
-    id: 4,
+    id: 3,
+    name: "E-commerce Website",
+    link: "https://ecommerce-store-khaki-kappa.vercel.app/",
+  },
+  {
+    id: 5,
     name: "Tree Service Website",
     link: "https://www.elitetreeandsnowllc.com/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Main Grille Website",
     link: "https://141maingrill.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Meditation Website",
     link: "https://shopify-app-murex.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "Courts frontend App",
     link: "https://courts-frontend.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     name: "Word Guessing App",
     link: "https://woordle-frontend.vercel.app/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Furniture Store",
     link: "https://github.com/SantinoGiordano/FurnitureStoreFrontend",
   },
-  
 ];
 
 export default Data;
-
-
