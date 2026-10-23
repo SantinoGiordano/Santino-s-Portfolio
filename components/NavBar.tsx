@@ -47,7 +47,7 @@ const NavBar = () => {
             <Link
               target="_blank"
               className="hover:text-gray-400 transition"
-              href="/RESUME SANTINO GIORDANO.pdf"
+              href="/Resume - Santino Giordano.pdf"
             >
               Resume
             </Link>
@@ -107,7 +107,7 @@ const NavBar = () => {
           <Link
             onClick={() => setIsOpen(false)}
             className="hover:text-gray-400"
-            href="/RESUME SANTINO GIORDANO.pdf"
+            href="/Resume - Santino Giordano.pdf"
           >
             Resume
           </Link>
