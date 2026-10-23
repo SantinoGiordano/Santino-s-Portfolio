@@ -8,8 +8,8 @@ const Data: Project[] = [
   },
   {
     id: 2,
-    name: "W-Mass HS Volleyball Stats Calculator",
-    link: "https://popevolleyballstats.vercel.app/",
+    name: "IAABO Website",
+    link: "https://my-app-sigma-eight-85.vercel.app/aboutUs",
   },
   {
     id: 3,
